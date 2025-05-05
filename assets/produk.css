@@ -1,0 +1,103 @@
+/* Global reset dan font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+#produk {
+    padding: 4rem 2rem;
+    margin: auto;
+}
+
+#produk h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+#produk>div {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Container untuk semua card */
+#produk>div>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 12px;
+    max-width: 1200px;
+    background-color: #fff;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* Card produk */
+#produk>div>div>div {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 280px;
+    height: 532px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: auto;
+}
+
+#produk>div>div>div:hover {
+    transform: translateY(-5px);
+}
+
+/* Gambar produk */
+#produk img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+#produk>div>div>div button {
+    /* margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px; */
+    margin: 16px ;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25D366;
+    display: inline-block;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Isi card */
+#produk div div div h5 {
+    margin: 0.8rem 1rem 0.5rem;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+#produk div div div p {
+    margin: 0 1rem 0.5rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Kategori */
+#produk div div div p strong {
+    color: #000;
+}
